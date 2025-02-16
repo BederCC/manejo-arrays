@@ -11,5 +11,8 @@
   },
   "author": "Beder Casa",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }
