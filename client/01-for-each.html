@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="tareas"></div>
+    <script>
+        const products = [
+            { title: 'burguer', price: 10 },
+            { title: 'pizza', price: 15 },
+            { title: 'hot dog', price: 5 }
+        ];
+        const app = document.getElementById('app');
+        products.forEach(product => {
+            app.innerHTML += `<li>${product.title} - $${product.price}</li>`;
+        });
+    </script>
+    <script>
+        const tasks = [
+            { title: 'task 1', completed: true },
+            { title: 'task 2', completed: false },
+            { title: 'task 3', completed: true }
+        ];
+        const tareas = document.getElementById('tareas');
+        tasks.forEach(task => {
+            tareas.innerHTML += `
+            <li>
+                <input type="checkbox" 
+                id=${task.title}
+                name=${task.title}
+                ${task.completed ? 'checked' : ''}
+                >
+                <label for=${task.title}>${task.title}</label>
+            </li>
+            `;
+        });
+    </script>
+</body>
+</html>
