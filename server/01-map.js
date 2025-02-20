@@ -7,6 +7,7 @@ const newArray = letters.map(item => item + '++');
 //     const element = letters[index];
 //     newArray.push(element + '++');
 // }
+
 const newArray2 = numbers.map(item => item * 2);
 console.log(newArray2);
 
