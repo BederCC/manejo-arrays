@@ -52,3 +52,17 @@ const respuesta2 = data
 }, {});
 
 console.log(respuesta2);
+
+//-------ejercicio clase-----
+numbers1 = [1,1,1,1] // 4
+numbers2 = [2,2,2,2] // 8
+numbers3 = [1,2,-2,2] // 3
+numbers4 = [] // 0
+
+function sum(numbers) {
+    return numbers.reduce((obj, item) => obj + item,0)
+}
+console.log(sum(numbers1));
+console.log(sum(numbers2));
+console.log(sum(numbers3));
+console.log(sum(numbers4));
